@@ -1,0 +1,11 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "pytorch-lambda-example"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-16dsv7wqxkgpj"
+s3_prefix = "pytorch-lambda-example"
+region = "us-east-2"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+image_repositories = ["pytorchEndpoint=325802966124.dkr.ecr.us-east-2.amazonaws.com/pytorchlambdaexampled347a2cd/pytorchendpointa8d9554arepo"]
